@@ -1,0 +1,54 @@
+vm-a@vm-a-VirtualBox:~$ head wilders.csv 
+Isabelle,Brunel,Biarritz,France,2017,Java
+Thibaut,Bouchet,Biarritz,France,2017,Java
+Emmanuelle,Mercier,Biarritz,France,2017,JavaScript
+Stéphanie,Maillard,Biarritz,France,2017,Java
+Eugène,Didier,Biarritz,France,2017,PHP
+Michelle,Legros,Biarritz,France,2017,Java
+Catherine,Marin,Biarritz,France,2017,Java
+Benoît,Descamps,Biarritz,France,2017,PHP
+Robert,Delorme,Biarritz,France,2017,PHP
+Charlotte,Tanguy,Biarritz,France,2017,PHP
+vm-a@vm-a-VirtualBox:~$ grep France;2019;PHP > php_france-2019.csv
+2019 : commande introuvable
+PHP : commande introuvable
+vm-a@vm-a-VirtualBox:~$ head php_france-2019.csv 
+vm-a@vm-a-VirtualBox:~$ grep France,2019,PHP > php_france-2019.csv
+vm-a@vm-a-VirtualBox:~$     
+vm-a@vm-a-VirtualBox:~$ head php_france-2019.csv 
+vm-a@vm-a-VirtualBox:~$ cat php_france-2019.csv 
+vm-a@vm-a-VirtualBox:~$ grep France 2019 PHP > php_france-2019.csv 
+grep: 2019: Aucun fichier ou dossier de ce nom
+grep: PHP: Aucun fichier ou dossier de ce nom
+vm-a@vm-a-VirtualBox:~$ grep France 2019 PHP wilders.csv > php_france-2019.csv 
+grep: 2019: Aucun fichier ou dossier de ce nom
+grep: PHP: Aucun fichier ou dossier de ce nom
+vm-a@vm-a-VirtualBox:~$ grep France  wilders.csv > php_france-2019.csv 
+vm-a@vm-a-VirtualBox:~$ grep France wilders.csv > php_france-2019.csv 
+vm-a@vm-a-VirtualBox:~$ grep France 2019 PHP wilders.csv > php_france-2019.csv
+grep: 2019: Aucun fichier ou dossier de ce nom
+grep: PHP: Aucun fichier ou dossier de ce nom
+vm-a@vm-a-VirtualBox:~$ grep France;2019;PHP wilders.csv > php_france-2019.csv
+2019 : commande introuvable
+PHP : commande introuvable
+vm-a@vm-a-VirtualBox:~$ grep France;2019;PHP;wilders.csv > php_france-2019.csv
+2019 : commande introuvable
+PHP : commande introuvable
+wilders.csv : commande introuvable
+vm-a@vm-a-VirtualBox:~$ grep France|2019|PHP;wilders.csv > php_france-2019.csv
+2019 : commande introuvable
+PHP : commande introuvable
+wilders.csv : commande introuvable
+vm-a@vm-a-VirtualBox:~$ grep France|2019|PHP wilders.csv > php_france-2019.csv
+PHP : commande introuvable
+2019 : commande introuvable
+vm-a@vm-a-VirtualBox:~$ grep France/2019/PHP wilders.csv > php_france-2019.csv 
+vm-a@vm-a-VirtualBox:~$ grep France/2019/PHP wilders.csv > php_france-2019.csv 
+vm-a@vm-a-VirtualBox:~$ grep France/2019/PHP/ wilders.csv > php_france-2019.csv vm-a@vm-a-VirtualBox:~$ grep France/2019/PHP|wilders.csv > php_france-2019.csv 
+wilders.csv : commande introuvable
+vm-a@vm-a-VirtualBox:~$ grep "France" wilders.csv | grep "2019" |grep "PHP" > php_france-2019.csv 
+
+m-a@vm-a-VirtualBox:~$ grep "Biarritz" wilders.csv | grep"JavaScript" > javascript_biarritz.csv
+grepJavaScript : commande introuvable
+vm-a@vm-a-VirtualBox:~$ grep "Biarritz" wilders.csv | grep "JavaScript" > javascript_biarritz.csv
+vm-a@vm-a-VirtualBox:~$ grep "Toulouse" wilders.csv | grep "JavaScript" > javascript_toulouse.csv
