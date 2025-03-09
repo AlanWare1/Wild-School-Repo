@@ -35,35 +35,17 @@ vm-a@vm-a-VirtualBox:~$ grep France;2019;PHP;wilders.csv > php_france-2019.csv
 2019 : commande introuvable
 PHP : commande introuvable
 wilders.csv : commande introuvable
-  254  grep "France";"PHP";"2019" < php_france_2019.csv
-  255  grep "France";"PHP";"2019" wilders.csv < php_france_2019.csv
-  256  grep wilders.csv "France";"PHP";"2019" < php_france_2019.csv
-  257  grep "wilders.csv" France;PHP;2019 < php_france_2019.csv
-  258  grep "France" wilders.csv;PHP;2019 < php_france_2019.csv
-  259  grep "France" wilders.csv;"PHP";"2019" < php_france_2019.csv
-  260  grep France,PHP,2019 <wilders.csv> php_france_2019.csv
-  261  hisotry
-  262  history
-  263  grep "France","PHP","2019" <wilders.csv> php_france_2019.csv
-  264  grep "France","2019","PHP" <wilders.csv> php_france_2019.csv
-  265  history
-  266  /home
-  267  cd /home
-  268  cd /home/vm-a/
-  269  head Prenoms.csv 
-  270  grep "f;french" < Prenoms.csv | wc -l
-  271  grep swedish Prenoms.csv > Swedish.csv
-  272  grep danish Prenoms.csv > Danish.csv
-  273  grep norwegian Prenoms.csv > Norwegian.csv
-  274  cat Swedish.csv Danish.csv Norwegian.csv | sort -u
-  275  cat Swedish.csv Danish.csv Norwegian.csv | sort -u > Scandinavian.csv
-  276  history
-  277  grep "Toulouse","JavaScript" <wilders.csv> javascript_toulouse.csv
-  278  grep "Toulouse";"JavaScript" <wilders.csv> javascript_toulouse.csv
-  279  grep "Toulouse","JavaScript" <wilders.csv> javascript_toulouse.csv
-  280  history
-  281  grep "Toulouse" <wilders.csv> ,"JavaScript" < javascript_toulouse.csv
-  282  history
+grep "France";"PHP";"2019" < php_france_2019.csv
+grep "France";"PHP";"2019" wilders.csv < php_france_2019.csv
+grep wilders.csv "France";"PHP";"2019" < php_france_2019.csv
+grep "wilders.csv" France;PHP;2019 < php_france_2019.csv
+grep "France" wilders.csv;PHP;2019 < php_france_2019.csv
+grep "France" wilders.csv;"PHP";"2019" < php_france_2019.csv
+grep France,PHP,2019 <wilders.csv> php_france_2019.csv
+grep "France","PHP","2019" <wilders.csv> php_france_2019.csv
+grep "France","2019","PHP" <wilders.csv> php_france_2019.csv
+grep "Toulouse","JavaScript" <wilders.csv> javascript_toulouse.csv
+grep "Toulouse" <wilders.csv> ,"JavaScript" < javascript_toulouse.csv
 vm-a@vm-a-VirtualBox:~$ grep "Toulouse" <wilders.csv > javascript_toulouse.csv 
 vm-a@vm-a-VirtualBox:~$ grep "Toulouse"|"Javascript" <wilders.csv > javascript_toulouse.csv 
 Javascript : commande introuvable
