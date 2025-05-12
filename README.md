@@ -1,5 +1,3 @@
-![photo de profil](https://github.com/AlanWare1/Wild-School-Repo/blob/55217b2840310ebb0d4195a036867520b51fe16d/photo%20moi.png)
-
 # CV - Technicien Informatique (Reconversion)
 
 ## Informations personnelles
