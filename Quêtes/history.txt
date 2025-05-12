@@ -1,0 +1,100 @@
+184  wget https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv
+  185  head wilders.csv 
+  186  grep France;2019;PHP > php_france-2019.csv
+  187  head php_france-2019.csv 
+  188  grep France,2019,PHP > php_france-2019.csv
+  189  head php_france-2019.csv 
+  190  cat php_france-2019.csv 
+  191  grep France 2019 PHP > php_france-2019.csv 
+  192  grep France 2019 PHP wilders.csv > php_france-2019.csv 
+  193  grep France  wilders.csv > php_france-2019.csv 
+  194  grep France wilders.csv > php_france-2019.csv 
+  195  grep France 2019 PHP wilders.csv > php_france-2019.csv
+  196  grep France;2019;PHP wilders.csv > php_france-2019.csv
+  197  grep France;2019;PHP;wilders.csv > php_france-2019.csv
+  198  grep France|2019|PHP;wilders.csv > php_france-2019.csv
+  199  grep France|2019|PHP wilders.csv > php_france-2019.csv
+  200  grep France/2019/PHP wilders.csv > php_france-2019.csv 
+  201  grep France/2019/PHP/ wilders.csv > php_france-2019.csv 
+  202  grep France/2019/PHP|wilders.csv > php_france-2019.csv 
+  203  grep "France" wilders.csv | grep "2019" |grep "PHP" > php_france-2019.csv 
+  204  grep "France" | grep "2019" | grep"PHP" > php_france-2019.csv
+  205  grep "France" | grep "2019" | grep "PHP" > php_france-2019.csv
+  206  grep "France" | grep "2019" | grep "PHP" wilders.csv > php_france-2019.csv
+  207  curl -o Unix_commands.md https://gist.githubusercontent.com/phaneendra/3804036/raw/f124b9f7703114d6be22f55e775cd2d015a45a91/UnixCommands.md
+  208  cat Unix_comands.md
+  209  cat Unix_commands.md
+  210  more
+  211  ls ~ > home-contents.txt
+  212  ls
+  213  cat home-contents.txt 
+  214  more home-contents.txt 
+  215  ls
+  216  rm home-contents.txt 
+  217  ls / > /dev/null
+  218  cat /foo > /tmp/foo.txt
+  219  touch foo.txt
+  220  cat /foo > /tmp/foo.txt
+  221  cat /foo 2> /tmp/foo-err.txt
+  222  /tmp/foo-err.txt
+  223  sudo/tmp/foo-err.txt
+  224  cat /foo 2> /dev/null
+  225  /tmp
+  226  find tmp
+  227  find /tmp
+  228  ls
+  229  cat
+  230  cat > languages.txt
+  231  wc languages.txt 
+  232  wc
+  233  sort languages.txt 
+  234  sort
+  235  sort languages.txt 
+  236  sort
+  237  wc > languages.txt 
+  238  wget https://www.data.gouv.fr/s/resources/liste-de-prenoms/20141127-154433/Prenoms.csv
+  239  head Prenoms.csv 
+  240  grep "f;french" < Prenoms.csv | wc -1
+  241  grep "f;french" < Prenoms.csv | wc -l
+  242  grep swedish Prenoms.csv  > Swedish.csv ; grep danish Prenoms.csv > Danish.csv ; grep norwegian Prenoms.csv > Norwegian.csv
+  243  cat Swedish.csv Danish.csv Norwegian.csv | sort -u
+  244  cat Swedish.csv Danish.csv Norwegian.csv | sort
+  245  man sort
+  246  cfdisk
+  247  sudo cfdisk
+  248  l disk
+  249  ls disk
+  250  df
+  251  df -h
+  252  df -ht ext4
+  253  watch df -ht ext4
+  254  grep "France";"PHP";"2019" < php_france_2019.csv
+  255  grep "France";"PHP";"2019" wilders.csv < php_france_2019.csv
+  256  grep wilders.csv "France";"PHP";"2019" < php_france_2019.csv
+  257  grep "wilders.csv" France;PHP;2019 < php_france_2019.csv
+  258  grep "France" wilders.csv;PHP;2019 < php_france_2019.csv
+  259  grep "France" wilders.csv;"PHP";"2019" < php_france_2019.csv
+  260  grep France,PHP,2019 <wilders.csv> php_france_2019.csv
+  261  hisotry
+  262  history
+  263  grep "France","PHP","2019" <wilders.csv> php_france_2019.csv
+  264  grep "France","2019","PHP" <wilders.csv> php_france_2019.csv
+  265  history
+  266  /home
+  267  cd /home
+  268  cd /home/vm-a/
+  269  head Prenoms.csv 
+  270  grep "f;french" < Prenoms.csv | wc -l
+  271  grep swedish Prenoms.csv > Swedish.csv
+  272  grep danish Prenoms.csv > Danish.csv
+  273  grep norwegian Prenoms.csv > Norwegian.csv
+  274  cat Swedish.csv Danish.csv Norwegian.csv | sort -u
+  275  cat Swedish.csv Danish.csv Norwegian.csv | sort -u > Scandinavian.csv
+  276  history
+  277  grep "Toulouse","JavaScript" <wilders.csv> javascript_toulouse.csv
+  278  grep "Toulouse";"JavaScript" <wilders.csv> javascript_toulouse.csv
+  279  grep "Toulouse","JavaScript" <wilders.csv> javascript_toulouse.csv
+  280  history
+  281  grep "Toulouse" <wilders.csv> ,"JavaScript" < javascript_toulouse.csv
+  282  history
+  283  history | tail -100 > history_terminal3.txt
