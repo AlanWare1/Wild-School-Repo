@@ -1,0 +1,60 @@
+Configuration PfSense
+
+Dans cet exercice, il y aura une VM Pfsense, une vm windows 10 client et une vm windows serveur 2022.
+
+Installation de PfSense.
+Ajoute l'ISO puis lancer l'installateur. Tout configurer par default.
+
+Configuration des IP
+Les vm client et serveur sont en NAT sur le réseau 172.16.1.1
+windows serveur 2022 : 172.16.1.2/24 dns 8.8.8.8 et passerelle 172.16.1.1
+windows 10 client : 172.16.1.100/24 dns 8.8.8.8 et passerelle 172.16.1.1
+PfSense : LAN 172.16.1.1/24 dns 8.8.8.8 et WAN/dhcp en NAT 10.0.2.15/24
+
+Toutes les VM se ping sur le réseau local.
+
+Configuration de Pfsense via l'interface web du client windows 10
+On rentre la passerelle dans Bing, accepter la connexion.
+Connexion à l'interface d'administration de Pfsense
+ID : admin
+Mdp : pfsense
+next
+On configure le DNS primaire et secondaire ; next
+On configure la timezone (Europe/Paris) ; next
+next
+next
+changement du mdp d'admin Pfsense : 123
+next
+
+On est ensuite sur le dashboard.
+Vérification du routeur par default pour la connexion internet
+(J'ai du décoché 192.16.1.1 et mettre mon 10.0.2.15 par default)
+
+On configure les regles pare-feu pour autoriser le client et interdir le serveur.
+
+CLient :
+Action : Block (pas Pass)
+Interface : LAN
+Protocole : Any (Si on laisse en TCP le ping va quand même fonctionner)
+Source : Single host or alias → 172.16.1.100
+Destination : any
+Protocol : any
+Description : Blocage poste client
+
+Serveur:
+Action : Pass
+Interface : LAN
+Protocole : Any
+Source : Single host or alias  →  172.16.1.2
+Destination : any
+Protocol : any
+Description : Autorisation connexion serveur
+
+On sauvegarde bien les regles.
+Il faut que les règles soient en haut de la liste car l'execution est de haut en bas.
+
+Capture d'écran d'avant après le ping et des règles
+
+[https://github.com/AlanWare1/Wild-School-Repo/blob/main/Qu%C3%AAtes/Photos/Capture%20d'%C3%A9cran%20avant%20apres%20regle%20client%20pfsense.png]
+
+[https://github.com/AlanWare1/Wild-School-Repo/blob/main/Qu%C3%AAtes/Photos/Capture%20d'%C3%A9cran%20config%20rules.png]
