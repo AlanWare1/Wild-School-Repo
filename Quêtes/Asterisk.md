@@ -14,8 +14,8 @@ callreturn = yes
 callgroup = 1  
 pickupgroup = 1  
 nat = yes  
-; 
-; 
+;  
+;    
 [88012]  
 ;  
 ullname = Stephane GROOT  
