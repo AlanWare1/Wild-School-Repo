@@ -1,19 +1,19 @@
 #### Configuration du fichier etc/asterisk/user.conf
 
 [general]
-hasvoicemail = yes
-hassip = yes
-hasiax = yes
-callwaiting = yes
-threewaycalling = yes
-callwaitingcallerid = yes
-transfer = yes
-canpark = yes
-cancallforward = yes
-callreturn = yes
-callgroup = 1
-pickupgroup = 1
-nat = yes
+hasvoicemail = yes  
+hassip = yes  
+hasiax = yes  
+callwaiting = yes  
+threewaycalling = yes  
+callwaitingcallerid = yes  
+transfer = yes  
+canpark = yes  
+cancallforward = yes  
+callreturn = yes  
+callgroup = 1  
+pickupgroup = 1  
+nat = yes  
 ; 
 ; 
 [88012]
